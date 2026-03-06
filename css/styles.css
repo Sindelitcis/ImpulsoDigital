@@ -148,7 +148,7 @@ body {
   font-weight: 600;
   padding: 7px 15px;
   border-radius: 100px;
-  transition: color 0.2s, background 0.2s;
+  transition: color 0.2s, background-color 0.2s;
   letter-spacing: 0.01em;
 }
 .nav-links a:hover { color: var(--blue); background: var(--blue-lt); }
@@ -203,7 +203,7 @@ body {
   text-decoration: none;
   padding: 10px 32px;
   border-radius: 12px;
-  transition: background 0.2s, color 0.2s;
+  transition: background-color 0.2s, color 0.2s;
 }
 .nav-drawer a:hover { background: var(--orange-lt); color: var(--orange); }
 .drawer-close {
@@ -716,7 +716,7 @@ body {
   font-size: 0.8rem;
   font-weight: 600;
   cursor: default;
-  transition: background 0.2s, border-color 0.2s, color 0.2s;
+  transition: background-color 0.2s, border-color 0.2s, color 0.2s;
 }
 .chip:hover { background: var(--blue-lt); border-color: var(--blue); color: var(--blue); }
 
@@ -970,7 +970,7 @@ body {
   border-bottom: 1px solid var(--border);
   border-radius: 12px;
   margin: 0 -14px;
-  transition: background 0.2s;
+  transition: background-color 0.2s;
   cursor: default;
 }
 .canal-item:last-child { border-bottom: none; }
@@ -1165,7 +1165,7 @@ body {
   outline: none;
   -webkit-appearance: none;
   appearance: none;
-  transition: border-color 0.25s, box-shadow 0.25s, background 0.25s;
+  transition: border-color 0.25s, box-shadow 0.25s, background-color 0.25s;
 }
 .fg input::placeholder,
 .fg textarea::placeholder { color: #a0aec0; }
