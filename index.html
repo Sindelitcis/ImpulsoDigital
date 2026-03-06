@@ -1,0 +1,561 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Impulso Digital — Marketing & Comunicação Digital</title>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,300;12..96,400;12..96,500;12..96,700;12..96,800&family=DM+Sans:ital,opsz,wght@0,9..40,300;0,9..40,400;0,9..40,500;1,9..40,300&display=swap" rel="stylesheet">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<header id="main-nav">
+  <div class="nav-logo">Impulso<em>Digital</em></div>
+  <ul class="nav-links">
+    <li><a href="#sobre">Sobre</a></li>
+    <li><a href="#servicos">Serviços</a></li>
+    <li><a href="#segmentos">Segmentos</a></li>
+    <li><a href="#canais">Canais</a></li>
+    <li><a href="#contato" class="nav-cta">Fale conosco</a></li>
+  </ul>
+  <div class="nav-ham" id="navHam" onclick="toggleDrawer()">
+    <span></span><span></span><span></span>
+  </div>
+</header>
+
+<div class="nav-drawer" id="navDrawer">
+  <button class="drawer-close" onclick="toggleDrawer()">✕</button>
+  <a href="#sobre"     onclick="toggleDrawer()">Sobre</a>
+  <a href="#servicos"  onclick="toggleDrawer()">Serviços</a>
+  <a href="#segmentos" onclick="toggleDrawer()">Segmentos</a>
+  <a href="#canais"    onclick="toggleDrawer()">Canais</a>
+  <a href="#contato"   onclick="toggleDrawer()" style="color:var(--orange)">Fale conosco →</a>
+</div>
+
+<section id="hero">
+  <div class="hero-deco-ring"></div>
+  <div class="hero-deco-dot d1"></div>
+  <div class="hero-deco-dot d2"></div>
+  <div class="hero-deco-dot d3"></div>
+
+  <div class="hero-inner">
+    
+    <div class="hero-content">
+      <div class="hero-eyebrow">
+        <span class="eyebrow-dot"></span>
+        Agência de Comunicação Digital
+      </div>
+
+      <h1 class="hero-title">
+        Mais clientes.<br>
+        <span class="ht-accent">Mais vendas.</span><br>
+        <span class="ht-light">Menos esforço.</span>
+      </h1>
+
+      <div class="hero-foot">
+        <p class="hero-desc">
+          A <strong>Impulso Digital</strong> conecta sua empresa aos clientes certos, nos canais certos.
+          <strong>15 anos</strong> transformando comunicação em crescimento para a sua empresa.
+        </p>
+        <div class="hero-btns">
+          <a href="#contato" class="btn-solid">Quero uma proposta →</a>
+          <a href="#servicos" class="btn-outline">Ver serviços</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="hero-visual">
+      <div class="chat-mockup">
+        <div class="chat-bubble msg-left anim-1">
+          <div class="chat-sender">Impulso Bot ⚡</div>
+          Campanha de reativação disparada para 850 clientes inativos. 🚀
+          <div class="chat-time">10:02</div>
+        </div>
+
+        <div class="chat-bubble msg-right anim-2">
+          Oi! Vi a oferta e quero renovar meu plano agora mesmo. Como faço?
+          <div class="chat-time">10:15 <span class="read-ticks">✓✓</span></div>
+        </div>
+
+        <div class="chat-bubble msg-left anim-3">
+          <div class="chat-sender">Impulso Bot ⚡</div>
+          <strong>✅ Pagamento aprovado!</strong><br>
+          Mais uma venda realizada no piloto automático.
+          <div class="chat-time">10:17</div>
+        </div>
+      </div>
+    </div>
+
+  </div>
+</section>
+
+<div class="marquee-wrap">
+  <div class="marquee-track">
+    <span class="m-item on">WhatsApp Marketing <span class="m-dot">✦</span></span>
+    <span class="m-item">SMS Corporativo <span class="m-dot">✦</span></span>
+    <span class="m-item on">Google Ads <span class="m-dot">✦</span></span>
+    <span class="m-item">RCS <span class="m-dot">✦</span></span>
+    <span class="m-item on">Email Marketing <span class="m-dot">✦</span></span>
+    <span class="m-item">ChatBot <span class="m-dot">✦</span></span>
+    <span class="m-item on">Omnichannel <span class="m-dot">✦</span></span>
+    <span class="m-item">Criação de URAs <span class="m-dot">✦</span></span>
+    <span class="m-item on">WhatsApp Marketing <span class="m-dot">✦</span></span>
+    <span class="m-item">SMS Corporativo <span class="m-dot">✦</span></span>
+    <span class="m-item on">Google Ads <span class="m-dot">✦</span></span>
+    <span class="m-item">RCS <span class="m-dot">✦</span></span>
+    <span class="m-item on">Email Marketing <span class="m-dot">✦</span></span>
+    <span class="m-item">ChatBot <span class="m-dot">✦</span></span>
+    <span class="m-item on">Omnichannel <span class="m-dot">✦</span></span>
+    <span class="m-item">Criação de URAs <span class="m-dot">✦</span></span>
+  </div>
+</div>
+
+<section id="atencao">
+  <div class="inner">
+    <div class="atencao-grid">
+      <div class="r">
+        <span class="sec-eyebrow">Economia da Atenção</span>
+        <h2 class="sec-title" style="margin-bottom:24px;">Seu cliente já está com o<br><span style="color:var(--orange)">celular na mão.</span></h2>
+        <p style="color:var(--muted); font-size:1.05rem; line-height:1.8; margin-bottom:16px;">Neste exato momento, a atenção do seu público está voltada para uma tela. O nosso trabalho é inserir a sua empresa no ecossistema diário do consumidor.</p>
+        <p style="color:var(--muted); font-size:1.05rem; line-height:1.8;">Seja através de uma notificação no WhatsApp, um alerta via SMS ou um anúncio geolocalizado, garantimos que sua marca seja a primeira a ser vista quando a necessidade surgir.</p>
+      </div>
+      <div class="r d1" style="display:flex; justify-content:center; align-items:center;">
+          <div class="atencao-visual full-bg-card">
+            <div class="card-bg-overlay"></div>
+    
+            <div class="card-content-overlay">
+              <h3 class="card-title-light">Presença de Bolso</h3>
+              <p class="card-text-light">Sua marca a um toque de distância, 24 horas por dia.</p>
+          </div>
+</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<div class="stats-row">
+  <div class="stat-cell r">
+    <div class="stat-num" data-target="15" data-suffix="+">0+</div>
+    <div class="stat-label">Anos de mercado<br>e expertise</div>
+  </div>
+  <div class="stat-cell r d1">
+    <div class="stat-num" data-target="200" data-suffix="+">0+</div>
+    <div class="stat-label">Marcas atendidas<br>com sucesso</div>
+  </div>
+  <div class="stat-cell r d2">
+    <div class="stat-num" data-target="98" data-suffix="%">0%</div>
+    <div class="stat-label">Taxa de entrega<br>de mensagens</div>
+  </div>
+  <div class="stat-cell r d3">
+    <div class="stat-num" data-target="8" data-suffix="">0</div>
+    <div class="stat-label">Canais digitais<br>integrados</div>
+  </div>
+</div>
+
+<section id="sobre">
+  <div class="inner">
+    <div class="sobre-grid">
+      <div class="r">
+        <span class="sec-eyebrow">Quem somos</span>
+        <h2 class="sec-title" style="margin-bottom:24px;">Uma agência feita<br>para gerar resultado</h2>
+        <p>Com sede em <strong>Colombo, PR</strong>, a Impulso Digital nasceu para transformar a comunicação de empresas que buscam escala e liderança em motores de crescimento digital.</p>
+        <p>Somos especialistas em criar estratégias multicanal que captam, engajam e fidelizam clientes — com foco em métricas que importam para o seu negócio.</p>
+        <div class="chip-row">
+          <span class="chip">Captação de clientes</span>
+          <span class="chip">Reativação de base</span>
+          <span class="chip">Automação de cobranças</span>
+          <span class="chip">Fidelização</span>
+          <span class="chip">Análise de resultados</span>
+        </div>
+      </div>
+      <div class="sobre-cards r d1">
+        <div class="ab hero-ab">
+          <div>
+            <div class="ab-big c">15+</div>
+            <div class="ab-label">anos de experiência</div>
+          </div>
+          <div style="text-align:right">
+            <div class="ab-big w">200+</div>
+            <div class="ab-label">marcas atendidas</div>
+          </div>
+        </div>
+        <div class="ab">
+          <div class="ab-icon" style="color: var(--orange);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M76,152a36,36,0,1,0,36,36A36,36,0,0,0,76,152Zm0,56a20,20,0,1,1,20-20A20,20,0,0,1,76,208ZM42.34,106.34,56.69,92,42.34,77.66A8,8,0,0,1,53.66,66.34L68,80.69,82.34,66.34A8,8,0,0,1,93.66,77.66L79.31,92l14.35,14.34a8,8,0,0,1-11.32,11.32L68,103.31,53.66,117.66a8,8,0,0,1-11.32-11.32Zm187.32,96a8,8,0,0,1-11.32,11.32L204,199.31l-14.34,14.35a8,8,0,0,1-11.32-11.32L192.69,188l-14.35-14.34a8,8,0,0,1,11.32-11.32L204,176.69l14.34-14.35a8,8,0,0,1,11.32,11.32L215.31,188Zm-45.19-89.51c-6.18,22.33-25.32,41.63-46.53,46.93A8.13,8.13,0,0,1,136,160a8,8,0,0,1-1.93-15.76c15.63-3.91,30.35-18.91,35-35.68,3.19-11.5,3.22-29-14.71-46.9L152,59.31V80a8,8,0,0,1-16,0V40a8,8,0,0,1,8-8h40a8,8,0,0,1,0,16H163.31l2.35,2.34C183.9,68.59,190.58,90.78,184.47,112.83Z"></path></svg>
+          </div>
+          <div class="ab-title">Estratégia</div>
+          <div class="ab-sub">Campanhas planejadas com foco em ROI real e mensurável.</div>
+        </div>
+        <div class="ab">
+          <div class="ab-icon" style="color: var(--orange);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M215.79,118.17a8,8,0,0,0-5-5.66L153.18,90.9l14.66-73.33a8,8,0,0,0-13.69-7l-112,120a8,8,0,0,0,3,13l57.63,21.61L88.16,238.43a8,8,0,0,0,13.69,7l112-120A8,8,0,0,0,215.79,118.17ZM109.37,214l10.47-52.38a8,8,0,0,0-5-9.06L62,132.71l84.62-90.66L136.16,94.43a8,8,0,0,0,5,9.06l52.8,19.8Z"></path></svg>
+          </div>
+          <div class="ab-title">Velocidade</div>
+          <div class="ab-sub">Campanhas no ar em menos de 24h após aprovação.</div>
+        </div>
+        <div class="ab">
+          <div class="ab-icon" style="color: var(--orange);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M224,200h-8V40a8,8,0,0,0-8-8H152a8,8,0,0,0-8,8V80H96a8,8,0,0,0-8,8v40H48a8,8,0,0,0-8,8v64H32a8,8,0,0,0,0,16H224a8,8,0,0,0,0-16ZM160,48h40V200H160ZM104,96h40V200H104ZM56,144H88v56H56Z"></path></svg>
+          </div>
+          <div class="ab-title">Dados</div>
+          <div class="ab-sub">Relatórios claros que orientam decisões de negócio.</div>
+        </div>
+        <div class="ab">
+          <div class="ab-icon" style="color: var(--orange);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M254.3,107.91,228.78,56.85a16,16,0,0,0-21.47-7.15L182.44,62.13,130.05,48.27a8.14,8.14,0,0,0-4.1,0L73.56,62.13,48.69,49.7a16,16,0,0,0-21.47,7.15L1.7,107.9a16,16,0,0,0,7.15,21.47l27,13.51,55.49,39.63a8.06,8.06,0,0,0,2.71,1.25l64,16a8,8,0,0,0,7.6-2.1l55.07-55.08,26.42-13.21a16,16,0,0,0,7.15-21.46Zm-54.89,33.37L165,113.72a8,8,0,0,0-10.68.61C136.51,132.27,116.66,130,104,122L147.24,80h31.81l27.21,54.41ZM41.53,64,62,74.22,36.43,125.27,16,115.06Zm116,119.13L99.42,168.61l-49.2-35.14,28-56L128,64.28l9.8,2.59-45,43.68-.08.09a16,16,0,0,0,2.72,24.81c20.56,13.13,45.37,11,64.91-5L188,152.66Zm62-57.87-25.52-51L214.47,64,240,115.06Zm-87.75,92.67a8,8,0,0,1-7.75,6.06,8.13,8.13,0,0,1-1.95-.24L80.41,213.33a7.89,7.89,0,0,1-2.71-1.25L51.35,193.26a8,8,0,0,1,9.3-13l25.11,17.94L126,208.24A8,8,0,0,1,131.82,217.94Z"></path></svg>
+          </div>
+          <div class="ab-title">Parceria</div>
+          <div class="ab-sub">Atendimento próximo e dedicado. Somos parte do seu time.</div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="servicos">
+  <div class="inner">
+    <div class="sec-header r">
+      <div>
+        <span class="sec-eyebrow">O que fazemos</span>
+        <h2 class="sec-title">Soluções que impulsionam<br>sua comunicação</h2>
+      </div>
+      <p class="sec-sub">Cada produto é pensado para um momento específico da jornada — da atração à fidelização do seu cliente.</p>
+    </div>
+
+    <div class="bento">
+      <div class="bc accent wide tall r">
+        <div>
+          <div class="bc-tag">⭐ Canal principal</div>
+          <div class="icon-wrap" style="color: var(--orange);">
+            <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path></svg>
+          </div>
+          <div class="bc-name">WhatsApp Business</div>
+          <div class="bc-desc">O canal mais poderoso do Brasil. Envio em massa via WhatsApp oficial com altíssima taxa de abertura. Promoções, lembretes, cobranças e relacionamento automatizado.</div>
+        </div>
+        <div class="bc-stat">98% abertura</div>
+      </div>
+      <div class="bc r d1">
+        <div class="bc-tag" style="background:var(--blue-lt); color:var(--blue);">SMS</div>
+        <div class="icon-wrap" style="color: var(--blue);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M216,48H40A16,16,0,0,0,24,64V224a15.84,15.84,0,0,0,9.25,14.5A16.05,16.05,0,0,0,40,240a15.89,15.89,0,0,0,10.25-3.78l.09-.07L83,208H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,224h0ZM216,192H80a8,8,0,0,0-5.23,1.95L40,224V64H216Z"></path></svg>
+        </div>
+        <div class="bc-name">SMS Corporativo</div>
+        <div class="bc-desc">Entrega instantânea em qualquer celular. Perfeito para alertas e ofertas.</div>
+      </div>
+
+      <div class="bc r">
+        <div class="bc-tag" style="background:var(--blue-lt); color:var(--blue);">Email</div>
+        <div class="icon-wrap" style="color: var(--blue);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path></svg>
+        </div>
+        <div class="bc-name">Email Marketing</div>
+        <div class="bc-desc">Campanhas segmentadas. Ideal para escolas, clínicas e conteúdos longos.</div>
+      </div>
+      <div class="bc r d1">
+        <div class="bc-tag" style="background:var(--blue-lt); color:var(--blue);">RCS</div>
+        <div class="icon-wrap" style="color: var(--blue);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M240,88.23a54.43,54.43,0,0,1-16,37L189.25,160a54.27,54.27,0,0,1-38.63,16h-.05A54.63,54.63,0,0,1,96,119.84a8,8,0,0,1,16,.45A38.62,38.62,0,0,0,150.58,160h0a38.39,38.39,0,0,0,27.31-11.31l34.75-34.75a38.63,38.63,0,0,0-54.63-54.63l-11,11A8,8,0,0,1,135.7,59l11-11A54.65,54.65,0,0,1,224,48,54.86,54.86,0,0,1,240,88.23ZM109,185.66l-11,11A38.41,38.41,0,0,1,70.6,208h0a38.63,38.63,0,0,1-27.29-65.94L78,107.31A38.63,38.63,0,0,1,144,135.71a8,8,0,0,0,16,.45A54.86,54.86,0,0,0,144,96a54.65,54.65,0,0,0-77.27,0L32,130.75A54.62,54.62,0,0,0,70.56,224h0a54.28,54.28,0,0,0,38.64-16l11-11A8,8,0,0,0,109,185.66Z"></path></svg>
+        </div>
+        <div class="bc-name">RCS Business</div>
+        <div class="bc-desc">O SMS do futuro: imagens e botões interativos nativos no Android.</div>
+      </div>
+      <div class="bc r d2">
+        <div class="bc-tag" style="background:var(--blue-lt); color:var(--blue);">Mídia</div>
+        <div class="icon-wrap" style="color: var(--blue);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M221.87,83.16A104.1,104.1,0,1,1,195.67,49l22.67-22.68a8,8,0,0,1,11.32,11.32l-96,96a8,8,0,0,1-11.32-11.32l27.72-27.72a40,40,0,1,0,17.87,31.09,8,8,0,1,1,16-.9,56,56,0,1,1-22.38-41.65L184.3,60.39a87.88,87.88,0,1,0,23.13,29.67,8,8,0,0,1,14.44-6.9Z"></path></svg>
+        </div>
+        <div class="bc-name">Base por região (Ads)</div>
+        <div class="bc-desc">Atração de novos clientes via anúncios. Segmentação para campanhas locais.</div>
+      </div>
+
+      <div class="bc r">
+        <div class="bc-tag" style="background:var(--blue-lt); color:var(--blue);">Bots</div>
+        <div class="icon-wrap" style="color: var(--blue);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M200,48H136V16a8,8,0,0,0-16,0V48H56A32,32,0,0,0,24,80V192a32,32,0,0,0,32,32H200a32,32,0,0,0,32-32V80A32,32,0,0,0,200,48Zm16,144a16,16,0,0,1-16,16H56a16,16,0,0,1-16-16V80A16,16,0,0,1,56,64H200a16,16,0,0,1,16,16Zm-52-56H92a28,28,0,0,0,0,56h72a28,28,0,0,0,0-56Zm-24,16v24H116V152ZM80,164a12,12,0,0,1,12-12h8v24H92A12,12,0,0,1,80,164Zm84,12h-8V152h8a12,12,0,0,1,0,24ZM72,108a12,12,0,1,1,12,12A12,12,0,0,1,72,108Zm88,0a12,12,0,1,1,12,12A12,12,0,0,1,160,108Z"></path></svg>
+        </div>
+        <div class="bc-name">ChatBot Inteligente</div>
+        <div class="bc-desc">Atende e vende 24/7. Bots para WhatsApp que nunca param.</div>
+      </div>
+      <div class="bc r d1">
+        <div class="bc-tag" style="background:var(--blue-lt); color:var(--blue);">Omni</div>
+        <div class="icon-wrap" style="color: var(--blue);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M128,24h0A104,104,0,1,0,232,128,104.12,104.12,0,0,0,128,24Zm88,104a87.61,87.61,0,0,1-3.33,24H174.16a157.44,157.44,0,0,0,0-48h38.51A87.61,87.61,0,0,1,216,128ZM102,168H154a115.11,115.11,0,0,1-26,45A115.27,115.27,0,0,1,102,168Zm-3.9-16a140.84,140.84,0,0,1,0-48h59.88a140.84,140.84,0,0,1,0,48ZM40,128a87.61,87.61,0,0,1,3.33-24H81.84a157.44,157.44,0,0,0,0,48H43.33A87.61,87.61,0,0,1,40,128ZM154,88H102a115.11,115.11,0,0,1,26-45A115.27,115.27,0,0,1,154,88Zm52.33,0H170.71a135.28,135.28,0,0,0-22.3-45.6A88.29,88.29,0,0,1,206.37,88ZM107.59,42.4A135.28,135.28,0,0,0,85.29,88H49.63A88.29,88.29,0,0,1,107.59,42.4ZM49.63,168H85.29a135.28,135.28,0,0,0,22.3,45.6A88.29,88.29,0,0,1,49.63,168Zm98.78,45.6a135.28,135.28,0,0,0,22.3-45.6h35.66A88.29,88.29,0,0,1,148.41,213.6Z"></path></svg>
+        </div>
+        <div class="bc-name">Omnichannel</div>
+        <div class="bc-desc">Todos os canais em um único lugar. Gestão unificada da equipe.</div>
+      </div>
+      <div class="bc r d2">
+        <div class="bc-tag" style="background:var(--blue-lt); color:var(--blue);">Voz</div>
+        <div class="icon-wrap" style="color: var(--blue);">
+          <svg xmlns="http://www.w3.org/2000/svg" width="1em" height="1em" fill="currentColor" viewBox="0 0 256 256"><path d="M144.27,45.93a8,8,0,0,1,9.8-5.66,86.22,86.22,0,0,1,61.66,61.66,8,8,0,0,1-5.66,9.8A8.23,8.23,0,0,1,208,112a8,8,0,0,1-7.73-5.94,70.35,70.35,0,0,0-50.33-50.33A8,8,0,0,1,144.27,45.93Zm-2.33,41.8c13.79,3.68,22.65,12.54,26.33,26.33A8,8,0,0,0,176,120a8.23,8.23,0,0,0,2.07-.27,8,8,0,0,0,5.66-9.8c-5.12-19.16-18.5-32.54-37.66-37.66a8,8,0,1,0-4.13,15.46Zm81.94,95.35A56.26,56.26,0,0,1,168,232C88.6,232,24,167.4,24,88A56.26,56.26,0,0,1,72.92,32.12a16,16,0,0,1,16.62,9.52l21.12,47.15,0,.12A16,16,0,0,1,109.39,104c-.18.27-.37.52-.57.77L88,129.45c7.49,15.22,23.41,31,38.83,38.51l24.34-20.71a8.12,8.12,0,0,1,.75-.56,16,16,0,0,1,15.17-1.4l.13.06,47.11,21.11A16,16,0,0,1,223.88,183.08Zm-15.88-2s-.07,0-.11,0h0l-47-21.05-24.35,20.71a8.44,8.44,0,0,1-.74.56,16,16,0,0,1-15.75,1.14c-18.73-9.05-37.4-27.58-46.46-46.11a16,16,0,0,1,1-15.7,6.13,6.13,0,0,1,.57-.77L96,95.15l-21-47a.61.61,0,0,1,0-.12A40.2,40.2,0,0,0,40,88,128.14,128.14,0,0,0,168,216,40.21,40.21,0,0,0,208,181.07Z"></path></svg>
+        </div>
+        <div class="bc-name">Criação de URAs</div>
+        <div class="bc-desc">Atendimento telefônico automatizado e direcionamento profissional.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="segmentos">
+  <div class="inner">
+    <div class="r" style="margin-bottom:40px;">
+      <span class="sec-eyebrow">Quem atendemos</span>
+      <h2 class="sec-title">Especialistas<br>no seu mercado</h2>
+    </div>
+    
+    <div class="scroll-indicator r d1">
+      Deslize para ver mais <span class="arrow-anim">→</span>
+    </div>
+    
+    <div class="seg-grid r d1">
+      <div class="seg-card">
+        <span class="seg-emoji">🛒</span>
+        <div class="seg-name">Mercado & Varejo</div>
+        <div class="seg-hint">Promoções e reativação de clientes</div>
+      </div>
+      <div class="seg-card">
+        <span class="seg-emoji">🏋️</span>
+        <div class="seg-name">Academia & Fitness</div>
+        <div class="seg-hint">Retenção, renovações e novos alunos</div>
+      </div>
+      <div class="seg-card">
+        <span class="seg-emoji">💆</span>
+        <div class="seg-name">Clínica de Estética</div>
+        <div class="seg-hint">Agendamentos e fidelização</div>
+      </div>
+      <div class="seg-card">
+        <span class="seg-emoji">🍽️</span>
+        <div class="seg-name">Restaurantes</div>
+        <div class="seg-hint">Delivery, reservas e promoções</div>
+      </div>
+      <div class="seg-card">
+        <span class="seg-emoji">📚</span>
+        <div class="seg-name">Escolas & Cursos</div>
+        <div class="seg-hint">Matrículas, rematrículas e avisos</div>
+      </div>
+      <div class="seg-card">
+        <span class="seg-emoji">⭐</span>
+        <div class="seg-name">Vendedor Score</div>
+        <div class="seg-hint">Prospecção ativa e follow-up</div>
+      </div>
+      <div class="seg-card">
+        <span class="seg-emoji">🛍️</span>
+        <div class="seg-name">E-commerce</div>
+        <div class="seg-hint">Carrinhos abandonados e ofertas</div>
+      </div>
+      <div class="seg-card">
+        <span class="seg-emoji">💳</span>
+        <div class="seg-name">Financeiras</div>
+        <div class="seg-hint">Régua de cobrança e negociação</div>
+      </div>
+      <div class="seg-card">
+        <span class="seg-emoji">💊</span>
+        <div class="seg-name">Farmácias</div>
+        <div class="seg-hint">Uso contínuo e alertas de saúde</div>
+      </div>
+      <div class="seg-card" style="background: transparent; border: 2px dashed var(--muted); display: flex; flex-direction: column; justify-content: center;">
+        <span class="seg-emoji">🚀</span>
+        <div class="seg-name">E muito mais!</div>
+        <div class="seg-hint">Desenhamos a estratégia ideal para o seu negócio.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="canais">
+  <div class="inner canais-inner">
+    <div class="r">
+      <span class="sec-eyebrow">Estratégia multicanal</span>
+      <h2 class="sec-title">O canal certo,<br>na hora certa</h2>
+    </div>
+    <div class="canais-grid">
+      <div class="r">
+        <p style="color:var(--muted);font-size:0.95rem;line-height:1.75;margin-bottom:28px;">Cada canal tem um papel estratégico. Combinamos eles para maximizar alcance e retorno.</p>
+        <div class="canal-list">
+          <div class="canal-item">
+            <div class="ci-medal m-gold">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path></svg>
+            </div>
+            <div class="ci-info">
+              <div class="ci-name">WhatsApp</div>
+              <div class="ci-role">Canal central · 98% de taxa de leitura</div>
+            </div>
+            <span class="ci-chip chip-gold">Conversão</span>
+          </div>
+          <div class="canal-item">
+            <div class="ci-medal m-silver">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,128a96,96,0,1,1-21.95-61.09,8,8,0,1,1-12.33,10.18A80,80,0,1,0,207.6,136H128a8,8,0,0,1,0-16h88A8,8,0,0,1,224,128Z"></path></svg>
+            </div>
+            <div class="ci-info">
+              <div class="ci-name">Google Ads</div>
+              <div class="ci-role">Atração de novos clientes</div>
+            </div>
+            <span class="ci-chip chip-light">Aquisição</span>
+          </div>
+          <div class="canal-item">
+            <div class="ci-medal m-bronze">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,48H40A16,16,0,0,0,24,64V224a15.84,15.84,0,0,0,9.25,14.5A16.05,16.05,0,0,0,40,240a15.89,15.89,0,0,0,10.25-3.78l.09-.07L83,208H216a16,16,0,0,0,16-16V64A16,16,0,0,0,216,48ZM40,224h0ZM216,192H80a8,8,0,0,0-5.23,1.95L40,224V64H216Z"></path></svg>
+            </div>
+            <div class="ci-info">
+              <div class="ci-name">SMS</div>
+              <div class="ci-role">Reforço rápido e urgente</div>
+            </div>
+            <span class="ci-chip chip-orange">Reforço</span>
+          </div>
+          <div class="canal-item">
+            <div class="ci-medal m-blue">
+              <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path></svg>
+            </div>
+            <div class="ci-info">
+              <div class="ci-name">E-mail</div>
+              <div class="ci-role">Complementar · Escolas e clínicas</div>
+            </div>
+            <span class="ci-chip chip-blue">Apoio</span>
+          </div>
+        </div>
+      </div>
+      <div class="benefits-col r d1">
+        <div class="bfit">
+          <div class="bfit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M256,136a8,8,0,0,1-8,8H232v16a8,8,0,0,1-16,0V144H200a8,8,0,0,1,0-16h16V112a8,8,0,0,1,16,0v16h16A8,8,0,0,1,256,136Zm-57.87,58.85a8,8,0,0,1-12.26,10.3C165.75,181.19,138.09,168,108,168s-57.75,13.19-77.87,37.15a8,8,0,0,1-12.25-10.3c14.94-17.78,33.52-30.41,54.17-37.17a68,68,0,1,1,71.9,0C164.6,164.44,183.18,177.07,198.13,194.85ZM108,152a52,52,0,1,0-52-52A52.06,52.06,0,0,0,108,152Z"></path></svg>
+          </div>
+          <div>
+            <div class="bfit-title">Captação de novos clientes</div>
+            <div class="bfit-desc">Campanhas de atração que trazem consumidores prontos para comprar.</div>
+          </div>
+        </div>
+        <div class="bfit">
+          <div class="bfit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M136,80v43.47l36.12,21.67a8,8,0,0,1-8.24,13.72l-40-24A8,8,0,0,1,120,128V80a8,8,0,0,1,16,0Zm-8-48A95.44,95.44,0,0,0,60.08,60.15C52.81,67.51,46.35,74.59,40,82V64a8,8,0,0,0-16,0v40a8,8,0,0,0,8,8H72a8,8,0,0,0,0-16H49c7.15-8.42,14.27-16.35,22.39-24.57a80,80,0,1,1,1.66,114.75,8,8,0,1,0-11,11.64A96,96,0,1,0,128,32Z"></path></svg>
+          </div>
+          <div>
+            <div class="bfit-title">Reativação de inativos</div>
+            <div class="bfit-desc">Recupere quem sumiu com ofertas segmentadas e personalizadas.</div>
+          </div>
+        </div>
+        <div class="bfit">
+          <div class="bfit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M208,32H184V24a8,8,0,0,0-16,0v8H88V24a8,8,0,0,0-16,0v8H48A16,16,0,0,0,32,48V208a16,16,0,0,0,16,16H208a16,16,0,0,0,16-16V48A16,16,0,0,0,208,32ZM72,48v8a8,8,0,0,0,16,0V48h80v8a8,8,0,0,0,16,0V48h24V80H48V48ZM208,208H48V96H208V208Zm-38.34-85.66a8,8,0,0,1,0,11.32l-48,48a8,8,0,0,1-11.32,0l-24-24a8,8,0,0,1,11.32-11.32L116,164.69l42.34-42.35A8,8,0,0,1,169.66,122.34Z"></path></svg>
+          </div>
+          <div>
+            <div class="bfit-title">Prevenção de no-shows</div>
+            <div class="bfit-desc">Automações que confirmam agendamentos e reduzem ausências.</div>
+          </div>
+        </div>
+        <div class="bfit">
+          <div class="bfit-icon">
+            <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="#000000" viewBox="0 0 256 256"><path d="M216,64H56a8,8,0,0,1,0-16H192a8,8,0,0,0,0-16H56A24,24,0,0,0,32,56V184a24,24,0,0,0,24,24H216a16,16,0,0,0,16-16V80A16,16,0,0,0,216,64Zm0,128H56a8,8,0,0,1-8-8V78.63A23.84,23.84,0,0,0,56,80H216Zm-48-60a12,12,0,1,1,12,12A12,12,0,0,1,168,132Z"></path></svg>
+          </div>
+          <div>
+            <div class="bfit-title">Recuperação de pagamentos</div>
+            <div class="bfit-desc">Régua de cobrança automatizada para reduzir inadimplência.</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="cta">
+  <div class="cta-pill r">✦ Pronto para crescer?</div>
+  <h2 class="cta-title r d1">Dê o próximo<br><span style="color:var(--orange)">impulso</span> agora</h2>
+  <p class="cta-sub r d2">Fale com nossa equipe e receba uma proposta personalizada, sem compromisso.</p>
+  <div class="cta-btns r d3">
+    <a href="https://wa.me/5541999999999?text=Ol%C3%A1%2C+vim+pelo+site+e+gostaria+de+saber+mais" target="_blank" class="btn-solid"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" color="white" viewBox="0 0 256 256"><path d="M187.58,144.84l-32-16a8,8,0,0,0-8,.5l-14.69,9.8a40.55,40.55,0,0,1-16-16l9.8-14.69a8,8,0,0,0,.5-8l-16-32A8,8,0,0,0,104,64a40,40,0,0,0-40,40,88.1,88.1,0,0,0,88,88,40,40,0,0,0,40-40A8,8,0,0,0,187.58,144.84ZM152,176a72.08,72.08,0,0,1-72-72A24,24,0,0,1,99.29,80.46l11.48,23L101,118a8,8,0,0,0-.73,7.51,56.47,56.47,0,0,0,30.15,30.15A8,8,0,0,0,138,155l14.61-9.74,23,11.48A24,24,0,0,1,152,176ZM128,24A104,104,0,0,0,36.18,176.88L24.83,210.93a16,16,0,0,0,20.24,20.24l34.05-11.35A104,104,0,1,0,128,24Zm0,192a87.87,87.87,0,0,1-44.06-11.81,8,8,0,0,0-6.54-.67L40,216,52.47,178.6a8,8,0,0,0-.66-6.54A88,88,0,1,1,128,216Z"></path></svg> Falar pelo WhatsApp</a>
+    <a href="#contato" class="btn-outline"><svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="currentColor" color="white" viewBox="0 0 256 256"><path d="M224,48H32a8,8,0,0,0-8,8V192a16,16,0,0,0,16,16H216a16,16,0,0,0,16-16V56A8,8,0,0,0,224,48ZM203.43,64,128,133.15,52.57,64ZM216,192H40V74.19l82.59,75.71a8,8,0,0,0,10.82,0L216,74.19V192Z"></path></svg> Enviar e-mail</a>
+  </div>
+</section>
+
+<section id="contato">
+  <div class="inner">
+    <div class="contato-grid">
+      <div class="r">
+        <span class="sec-eyebrow">Contato</span>
+        <h2 class="sec-title" style="margin-bottom:16px;">Vamos conversar<br>sobre o seu negócio</h2>
+        <p style="color:var(--muted);font-size:0.95rem;line-height:1.8;margin-bottom:36px;">Estamos em Colombo, PR, mas atendemos em todo o Brasil. Escolha como prefere entrar em contato.</p>
+        <a href="https://wa.me/5541999999999" target="_blank" class="contact-link">
+          <div class="cl-icon cl-wha">📲</div>
+          <div>
+            <div class="cl-title">WhatsApp</div>
+            <div class="cl-sub">Resposta rápida · Atendimento personalizado</div>
+          </div>
+          <span class="cl-arrow">→</span>
+        </a>
+        <a href="mailto:sindelitcis@gmail.com" class="contact-link">
+          <div class="cl-icon cl-mail">✉️</div>
+          <div>
+            <div class="cl-title">E-mail Direto</div>
+            <div class="cl-sub">Abrir aplicativo de e-mail</div>
+          </div>
+          <span class="cl-arrow">→</span>
+        </a>
+      </div>
+      <div class="r d1">
+        <div class="form-box">
+          <div class="form-title">Solicitar proposta</div>
+          <div class="form-hint">Preencha os dados abaixo e nossa equipe enviará um plano personalizado para você.</div>
+          
+          <form action="https://formsubmit.co/sindelitcis@gmail.com" method="POST" id="contactForm">
+            <input type="hidden" name="_subject" value="Novo Lead - Site Impulso Digital">
+            <input type="hidden" name="_captcha" value="false">
+            <input type="hidden" name="_template" value="table">
+            
+            <div class="form-2col">
+              <div class="fg"><label>Nome</label><input type="text" name="Nome" placeholder="João Silva" required></div>
+              <div class="fg"><label>WhatsApp</label><input type="tel" name="WhatsApp" placeholder="(41) 9 9999-9999" required></div>
+            </div>
+            <div class="fg"><label>E-mail</label><input type="email" name="Email" placeholder="joao@empresa.com.br" required></div>
+            <div class="fg">
+              <label>Segmento</label>
+              <select name="Segmento" required>
+                <option value="" disabled selected>Selecione seu nicho</option>
+                <option value="Varejo">Mercado / Varejo</option>
+                <option value="Fitness">Academia / Fitness</option>
+                <option value="Estética">Clínica de Estética / Saúde</option>
+                <option value="Restaurante">Restaurante / Food Service</option>
+                <option value="Educação">Escola / Cursos</option>
+                <option value="E-commerce">E-commerce / Lojas Online</option>
+                <option value="Financeiras">Financeiras / Cobrança</option>
+                <option value="Farmácias">Farmácias</option>
+                <option value="Outro">Outro</option>
+              </select>
+            </div>
+            <div class="fg"><label>Como podemos ajudar?</label><textarea name="Mensagem" placeholder="Descreva seu objetivo..." required></textarea></div>
+            
+            <button type="submit" class="btn-send">Enviar E-mail →</button>
+          </form>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<footer id="site-footer">
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div>
+        <div class="f-logo">Impulso<em>Digital</em></div>
+        <p class="f-tagline">Marketing & Comunicação Digital para empresas que buscam escala e liderança.</p>
+      </div>
+      <div class="footer-links">
+        <a href="#sobre">Sobre nós</a>
+        <a href="#servicos">Serviços</a>
+        <a href="#segmentos">Segmentos</a>
+        <a href="#canais">Canais</a>
+        <a href="#contato">Contato</a>
+      </div>
+      <div>
+        <p class="f-services">WhatsApp · SMS · RCS · Email<br>Google Ads · ChatBot · Omnichannel · URA</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span class="f-copy">© 2025 Impulso Digital. Todos os direitos reservados.</span>
+      <span class="f-loc">📍 <em>Colombo</em>, Paraná — Brasil</span>
+    </div>
+  </div>
+</footer>
+
+<script src="js/scripts.js"></script>
+</body>
+</html>
