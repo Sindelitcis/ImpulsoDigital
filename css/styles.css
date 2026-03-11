@@ -94,8 +94,8 @@ body {
   background: radial-gradient(ellipse 80% 60% at 10% 20%, rgba(0,85,255,0.08) 0%, transparent 60%), radial-gradient(ellipse 50% 40% at 85% 75%, rgba(255,107,26,0.1) 0%, transparent 55%); pointer-events: none;
 }
 .hero-inner {
-  display: grid; grid-template-columns: 1.1fr 0.9fr; gap: 80px; align-items: center;
-  max-width: 1400px; margin: 0 auto; position: relative; z-index: 1;
+  display: grid; grid-template-columns: 1fr 1.1fr; gap: 48px; align-items: center;
+  max-width: 1500px; margin: 0 auto; position: relative; z-index: 1;
 }
 .hero-eyebrow {
   display: inline-flex; align-items: center; gap: 8px; background: var(--white); color: var(--blue);
@@ -373,6 +373,295 @@ body {
 .ht-light  { color: var(--blue); }
 
 /* ════════════════════════════
+   HERO — DOIS CELULARES
+════════════════════════════ */
+.hero-phones-duo {
+  display: flex;
+  align-items: flex-start;
+  gap: 24px;
+  justify-content: flex-end;
+}
+
+.phone-left  { transform-origin: center top; }
+.phone-right { transform-origin: center top; margin-top: 40px; }
+
+.phone-label {
+  text-align: center;
+  font-size: 0.65rem;
+  font-weight: 800;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  color: var(--muted);
+  margin-bottom: 10px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+.phone-label-rcs {
+  color: #b06fc4;
+}
+
+/* ════════════════════════════
+   RCS PHONE — VARIANTE ROSA/ROXO
+════════════════════════════ */
+.rcs-phone {
+  background: #faf7ff !important;
+  border-color: #1a1520 !important;
+  box-shadow:
+    inset 0 0 0 2px #3a2d4a,
+    20px 30px 60px rgba(176,111,196,0.18),
+    0 10px 20px rgba(0,0,0,0.1) !important;
+  animation: floatRcs 7s ease-in-out infinite !important;
+}
+
+@keyframes floatRcs {
+  0%, 100% { transform: translateY(0) rotateY(12deg) rotateX(8deg) rotateZ(2deg); }
+  50% { transform: translateY(-15px) rotateY(10deg) rotateX(11deg) rotateZ(2deg); }
+}
+
+.rcs-header {
+  background: linear-gradient(135deg, #fff 0%, #fdf5ff 100%) !important;
+  border-bottom: 1px solid rgba(176,111,196,0.15) !important;
+}
+
+.rcs-avatar {
+  background: linear-gradient(135deg, #f3d9ff 0%, #e8c4f8 100%) !important;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.rcs-body {
+  background: linear-gradient(180deg, #f5eeff 0%, #ede4f8 100%) !important;
+  gap: 10px !important;
+}
+
+/* ── Rich Card RCS ── */
+.rcs-rich-card {
+  background: var(--white);
+  border-radius: 16px;
+  overflow: hidden;
+  align-self: flex-start;
+  max-width: 92%;
+  box-shadow: 0 8px 24px rgba(176,111,196,0.15);
+  border: 1px solid rgba(176,111,196,0.12);
+}
+
+.rcs-card-banner {
+  height: 130px;
+  position: relative;
+  overflow: hidden;
+}
+
+.rcs-banner-bg {
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(135deg, #c47ed4 0%, #8b44aa 50%, #5e2a7e 100%);
+  position: relative;
+  display: flex;
+  align-items: flex-end;
+}
+
+.rcs-banner-bg::before {
+  content: '🌸';
+  position: absolute;
+  font-size: 4rem;
+  top: -8px;
+  right: 10px;
+  opacity: 0.25;
+  transform: rotate(-15deg);
+}
+
+.rcs-banner-bg::after {
+  content: '✨';
+  position: absolute;
+  font-size: 1.5rem;
+  top: 14px;
+  left: 14px;
+  opacity: 0.5;
+}
+
+.rcs-banner-overlay {
+  position: absolute;
+  inset: 0;
+  background: linear-gradient(to top, rgba(0,0,0,0.5) 0%, transparent 60%);
+}
+
+.rcs-banner-content {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  padding: 10px 14px;
+  z-index: 2;
+}
+
+.rcs-banner-tag {
+  font-size: 0.55rem;
+  font-weight: 800;
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: #ffd6ff;
+  margin-bottom: 3px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.rcs-banner-title {
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-size: 0.95rem;
+  font-weight: 800;
+  color: #fff;
+  line-height: 1.15;
+  margin-bottom: 5px;
+}
+
+.rcs-banner-price {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.rcs-price-old {
+  font-size: 0.6rem;
+  color: rgba(255,255,255,0.55);
+  text-decoration: line-through;
+}
+
+.rcs-price-new {
+  font-size: 0.9rem;
+  font-weight: 800;
+  color: #ffd6ff;
+  font-family: 'Bricolage Grotesque', sans-serif;
+}
+
+.rcs-card-body {
+  padding: 10px 14px 8px;
+}
+
+.rcs-card-desc {
+  font-size: 0.72rem;
+  color: #5a4070;
+  line-height: 1.5;
+  margin-bottom: 8px;
+}
+
+.rcs-card-chips {
+  display: flex;
+  gap: 5px;
+  flex-wrap: wrap;
+}
+
+.rcs-chip {
+  background: #f0e4fa;
+  color: #8b44aa;
+  font-size: 0.6rem;
+  font-weight: 700;
+  padding: 3px 8px;
+  border-radius: 100px;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.rcs-card-btns {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  border-top: 1px solid rgba(176,111,196,0.12);
+  margin-top: 8px;
+}
+
+.rcs-btn-primary {
+  width: 100%;
+  background: linear-gradient(135deg, #c47ed4 0%, #8b44aa 100%);
+  color: white;
+  border: none;
+  padding: 10px 14px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  font-size: 0.75rem;
+  cursor: pointer;
+  transition: 0.2s;
+  border-bottom: 1px solid rgba(176,111,196,0.12);
+}
+
+.rcs-btn-primary:hover { opacity: 0.9; }
+
+.rcs-btn-secondary {
+  width: 100%;
+  background: transparent;
+  color: #8b44aa;
+  border: none;
+  padding: 9px 14px;
+  font-family: 'Bricolage Grotesque', sans-serif;
+  font-weight: 700;
+  font-size: 0.72rem;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+.rcs-btn-secondary:hover { background: #f9f0ff; }
+
+/* ── Bubble RCS ── */
+.rcs-bubble {
+  background: var(--white) !important;
+  border: 1px solid rgba(176,111,196,0.15) !important;
+  border-top-left-radius: 4px !important;
+}
+
+/* ── Quick Reply Chips RCS ── */
+.rcs-quick-replies {
+  display: flex;
+  gap: 6px;
+  flex-wrap: wrap;
+  align-self: flex-start;
+  max-width: 95%;
+}
+
+.rcs-qr-chip {
+  background: var(--white);
+  border: 1.5px solid #c47ed4;
+  color: #8b44aa;
+  font-size: 0.65rem;
+  font-weight: 700;
+  padding: 6px 11px;
+  border-radius: 100px;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+  transition: 0.2s;
+  white-space: nowrap;
+}
+
+.rcs-qr-chip:hover {
+  background: #f3d9ff;
+  border-color: #8b44aa;
+}
+
+/* RESPONSIVIDADE CELULAR 2 */
+@media (max-width: 1100px) {
+  .hero-phones-duo { gap: 16px; }
+  .hero-mockup-wrapper { max-width: 260px; }
+  .chat-interface-wrapper { height: 560px; }
+}
+@media (max-width: 960px) {
+  .hero-phones-duo { justify-content: center; gap: 20px; }
+  .hero-mockup-wrapper { max-width: 280px; }
+  .chat-interface-wrapper { height: 620px; } /* Aumentamos a altura aqui para não cortar no tablet */
+  .phone-right { margin-top: 30px; }
+}
+
+@media (max-width: 680px) {
+  .phone-right { 
+    display: block; 
+    margin-top: 0; 
+  }
+  .hero-phones-duo { 
+    justify-content: center; 
+    flex-direction: column; 
+    align-items: center; 
+    gap: 60px; 
+  }
+  .hero-mockup-wrapper { max-width: 300px; } /* Deixamos o celular um pouquinho mais largo no mobile */
+  .chat-interface-wrapper { height: 650px; } /* Aumentamos a altura aqui para caber todos os botões no celular */
+}
+
+/* ════════════════════════════
    MARQUEE
 ════════════════════════════ */
 .marquee-wrap { background: var(--blue); padding: 14px 0; overflow: hidden; position: relative; }
@@ -461,12 +750,6 @@ body {
 .bc-name { font-family: 'Bricolage Grotesque', sans-serif; font-size: 1.25rem; font-weight: 800; margin-bottom: 4px; color: var(--ink); }
 .bc-sub-label { font-size: 0.82rem; font-weight: 700; color: var(--orange); margin-bottom: 10px; }
 .bc-desc { font-size: 0.9rem; color: var(--muted); line-height: 1.6; }
-
-/* RCS wide card */
-.bc.wide { grid-column: span 3; }
-.rcs-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 40px; align-items: center; }
-.rcs-video-wrapper { border-radius: 16px; overflow: hidden; border: 1px solid var(--border); background: #000; display: flex; align-items: center; justify-content: center; height: 260px; }
-.rcs-video-wrapper video { width: 100%; height: 100%; object-fit: cover; }
 
 /* ════════════════════════════
    METODOLOGIA & RESULTADOS
@@ -564,3 +847,190 @@ body {
   .indicators-bar { flex-direction: column; gap: 10px; padding: 20px 7%; }
   .ind-sep { display: none; }
 }
+
+/* --- Lógica do Carrossel RCS --- */
+.rcs-carousel-wrapper {
+  position: relative;
+  width: 100%;
+  margin-bottom: 15px;
+}
+
+.rcs-carousel-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 10px;
+  padding-bottom: 5px;
+  scroll-behavior: smooth;
+  scrollbar-width: none; 
+  -ms-overflow-style: none;
+}
+
+.rcs-carousel-track::-webkit-scrollbar {
+  display: none;
+}
+
+.rcs-carousel-item {
+  flex: 0 0 90%; /* Define a largura de cada cartão (90% do contêiner) */
+  scroll-snap-align: center;
+}
+
+.rcs-carousel-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(255, 255, 255, 0.9);
+  border: 1px solid #DADCE0;
+  border-radius: 50%;
+  width: 28px;
+  height: 28px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  box-shadow: 0 2px 4px rgba(0,0,0,0.15);
+  color: #54656f;
+  font-size: 14px;
+  z-index: 5;
+}
+
+.rcs-carousel-btn.rcs-prev { left: -10px; }
+.rcs-carousel-btn.rcs-next { right: -10px; }
+
+/* ── Carrossel RCS Estilo Foto (Conforme Referência) ── */
+.rcs-image-carousel {
+  width: 100%;
+  margin-top: 4px;
+}
+
+.rcs-track {
+  display: flex;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  gap: 12px;
+  padding-bottom: 8px;
+  scrollbar-width: none;
+  -ms-overflow-style: none;
+}
+.rcs-track::-webkit-scrollbar { display: none; }
+
+.rcs-img-card {
+  flex: 0 0 88%;
+  scroll-snap-align: center;
+  background: #ffffff;
+  border-radius: 12px;
+  border: 1px solid #e5e5e5;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+}
+
+.rcs-card-photo {
+  width: 100%;
+  height: 120px;
+  object-fit: cover;
+  display: block;
+}
+
+.rcs-title-strip {
+  background: #3a849f;
+  color: white;
+  text-align: center;
+  font-family: 'DM Sans', sans-serif;
+  font-weight: 700;
+  font-size: 0.8rem;
+  padding: 8px 6px;
+}
+
+.rcs-price-box {
+  display: flex;
+  align-items: baseline;
+  justify-content: center;
+  gap: 6px;
+  padding: 14px 10px;
+  background: #fdfdfd;
+}
+
+.rcs-old-price {
+  font-size: 0.7rem;
+  color: #666;
+  text-decoration: line-through;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.rcs-por {
+  font-size: 0.75rem;
+  color: #333;
+  margin: 0 2px;
+}
+
+.rcs-new-price {
+  font-size: 1.35rem;
+  font-weight: 800;
+  color: #2b7a4b;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.rcs-card-actions-row {
+  display: flex;
+  gap: 8px;
+  padding: 0 12px 14px 12px;
+}
+
+.rcs-btn-blue {
+  flex: 0.7;
+  background: #256a8c;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.7rem;
+  padding: 10px 0;
+  cursor: pointer;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.rcs-btn-wpp {
+  flex: 1.3;
+  background: #f0f7f4;
+  color: #2b7a4b;
+  border: 1px solid #bce0cd;
+  border-radius: 8px;
+  font-weight: 700;
+  font-size: 0.65rem;
+  padding: 6px;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  text-align: left;
+  line-height: 1.1;
+  font-family: 'DM Sans', sans-serif;
+}
+
+.rcs-btn-wpp svg {
+  width: 25px !important;
+  height: 25px !important;
+  flex-shrink: 0;
+}
+
+/* ── Configuração Global para Ícones SVG ── */
+.seg-emoji svg, 
+.icon-wrap svg, 
+.met-icon svg, 
+.ab-icon svg, 
+.cl-icon svg {
+  width: 1em;
+  height: 1em;
+  stroke: currentColor;
+  stroke-width: 1.5;
+  stroke-linecap: round;
+  stroke-linejoin: round;
+  fill: none;
+  display: block;
+}
+
+.seg-emoji { color: var(--blue); } 
+.met-icon { color: var(--orange); }
