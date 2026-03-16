@@ -95,8 +95,8 @@ body {
 }
 .hero-inner {
   display: grid; 
-  grid-template-columns: 1.1fr 1fr;
-  gap: 48px; 
+  grid-template-columns: 1.15fr 1fr;
+  gap: 40px; 
   align-items: center;
   max-width: 1500px; 
   margin: 0 auto; 
@@ -398,6 +398,7 @@ body {
   align-items: flex-start;
   gap: 24px;
   justify-content: flex-end;
+  zoom: 0.9;
 }
 
 .phone-left  { transform-origin: center top; }
@@ -651,43 +652,30 @@ body {
   border-color: #8b44aa;
 }
 
-/* RESPONSIVIDADE CELULAR 2 */
 @media (max-width: 1350px) {
-  .hero-visual {
-    transform: scale(0.85);
-    transform-origin: right center;
+  .hero-phones-duo {
+    zoom: 0.70;
   }
 }
 
+/* RESPONSIVIDADE CELULAR 2 */
 @media (max-width: 1100px) {
-  .hero-phones-duo { gap: 16px; }
+  .hero-phones-duo { gap: 16px; zoom: 0.65; }
   .hero-mockup-wrapper { width: 260px; }
   .chat-interface-wrapper { height: 560px; }
 }
 
 @media (max-width: 960px) {
-  .hero-phones-duo { justify-content: center; gap: 20px; }
-  .hero-visual { 
-    justify-content: center; 
-    transform: scale(0.9); 
-    transform-origin: center center; 
-  }
+  .hero-phones-duo { justify-content: center; gap: 20px; zoom: 0.85; }
+  .hero-visual { justify-content: center; }
   .hero-mockup-wrapper { width: 280px; }
   .phone-right { margin-top: 30px; }
   .chat-interface-wrapper { height: 620px; }
 }
 
 @media (max-width: 680px) {
-  .phone-right { 
-    display: block; 
-    margin-top: 0; 
-  }
-  .hero-phones-duo { 
-    justify-content: center; 
-    flex-direction: column; 
-    align-items: center; 
-    gap: 60px; 
-  }
+  .phone-right { display: block; margin-top: 0; }
+  .hero-phones-duo { justify-content: center; flex-direction: column; align-items: center; gap: 60px; zoom: 0.85; }
   .hero-mockup-wrapper { width: 300px; }
   .chat-interface-wrapper { height: 650px; }
 }
