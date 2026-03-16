@@ -140,7 +140,8 @@ body {
 ════════════════════════════ */
 .hero-mockup-wrapper {
   position: relative;
-  max-width: 320px; 
+  width: 320px;
+  flex-shrink: 0;
   margin: 0 auto;
   z-index: 10;
   perspective: 1200px;
@@ -152,6 +153,7 @@ body {
 
 .chat-interface-wrapper {
   position: relative;
+  width: 100%;
   height: 640px;
   background: #e5ddd5;
   border-radius: 42px; 
@@ -641,14 +643,14 @@ body {
 /* RESPONSIVIDADE CELULAR 2 */
 @media (max-width: 1100px) {
   .hero-phones-duo { gap: 16px; }
-  .hero-mockup-wrapper { max-width: 260px; }
+  .hero-mockup-wrapper { width: 260px; }
   .chat-interface-wrapper { height: 560px; }
 }
 @media (max-width: 960px) {
   .hero-phones-duo { justify-content: center; gap: 20px; }
-  .hero-mockup-wrapper { max-width: 280px; }
-  .chat-interface-wrapper { height: 620px; } /* Aumentamos a altura aqui para não cortar no tablet */
+  .hero-mockup-wrapper { width: 280px; }
   .phone-right { margin-top: 30px; }
+  .chat-interface-wrapper { height: 620px; }
 }
 
 @media (max-width: 680px) {
@@ -662,8 +664,8 @@ body {
     align-items: center; 
     gap: 60px; 
   }
-  .hero-mockup-wrapper { max-width: 300px; } /* Deixamos o celular um pouquinho mais largo no mobile */
-  .chat-interface-wrapper { height: 650px; } /* Aumentamos a altura aqui para caber todos os botões no celular */
+  .hero-mockup-wrapper { width: 300px; }
+  .chat-interface-wrapper { height: 650px; }
 }
 
 /* ════════════════════════════
