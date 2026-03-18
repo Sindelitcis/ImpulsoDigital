@@ -1035,3 +1035,45 @@ body {
 
 .seg-emoji { color: var(--blue); } 
 .met-icon { color: var(--orange); }
+
+/* ════════════════════════════
+   CARROSSEL MOBILE - SEGMENTOS
+════════════════════════════ */
+/* Esconde o aviso de deslizar no computador por padrão */
+.swipe-hint {
+  display: none;
+}
+
+@media (max-width: 768px) {
+  /* Mostra o aviso "apagadinho" apenas no celular */
+  .swipe-hint {
+    display: block;
+    font-size: 0.85rem;
+    color: var(--muted);
+    opacity: 0.5;
+    margin-top: -10px;
+    margin-bottom: 20px;
+    font-weight: 600;
+  }
+
+  /* Transforma o grid original em um carrossel horizontal */
+  .seg-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+
+  /* Esconde a barra de rolagem cinza padrão do navegador */
+  .seg-grid::-webkit-scrollbar {
+    display: none; 
+  }
+
+  .seg-card {
+    flex: 0 0 85%; /* Deixa o card com 85% da tela para o próximo aparecer cortado */
+    scroll-snap-align: center;
+  }
+}
