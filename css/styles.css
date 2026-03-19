@@ -1078,8 +1078,10 @@ body {
   }
 }
 
-/* CARROSSEL MOBILE - SOLUÇÕES (CANAIS) */
+/* CARROSSEL MOBILE - CANAIS, METODOLOGIA E RESULTADOS */
 @media (max-width: 768px) {
+  
+  /* 1. Carrossel de Soluções (Canais) */
   .bento {
     display: flex;
     flex-wrap: nowrap;
@@ -1089,13 +1091,43 @@ body {
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: x mandatory;
   }
-  
-  .bento::-webkit-scrollbar {
-    display: none;
-  }
-
+  .bento::-webkit-scrollbar { display: none; }
   .bento .bc {
-    flex: 0 0 85%; /* Mantém o padrão de mostrar um pedaço do próximo card */
+    flex: 0 0 85%;
     scroll-snap-align: center;
   }
+
+  /* 2. Carrossel de Metodologia */
+  .metodologia-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+    justify-content: flex-start;
+  }
+  .metodologia-grid::-webkit-scrollbar { display: none; }
+  .met-step {
+    flex: 0 0 75%; /* Menor para mostrar o próximo passo cortado */
+    scroll-snap-align: center;
+  }
+
+  /* 3. Carrossel de Resultados */
+  .resultados-grid {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  .resultados-grid::-webkit-scrollbar { display: none; }
+  .res-item {
+    flex: 0 0 85%;
+    scroll-snap-align: center;
+  }
+
 }
