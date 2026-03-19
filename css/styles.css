@@ -1077,3 +1077,25 @@ body {
     scroll-snap-align: center;
   }
 }
+
+/* CARROSSEL MOBILE - SOLUÇÕES (CANAIS) */
+@media (max-width: 768px) {
+  .bento {
+    display: flex;
+    flex-wrap: nowrap;
+    overflow-x: auto;
+    gap: 16px;
+    padding-bottom: 16px;
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: x mandatory;
+  }
+  
+  .bento::-webkit-scrollbar {
+    display: none;
+  }
+
+  .bento .bc {
+    flex: 0 0 85%; /* Mantém o padrão de mostrar um pedaço do próximo card */
+    scroll-snap-align: center;
+  }
+}
